@@ -1,14 +1,5 @@
-
-nav{
-  text-align: center;
-  margin: 0 auto;
-
-}
-nav ul{
-  display:flex;
-  justify-content: space-around;
-}
-.img1{
-  height:700px;
-  width:100%;
+body{
+  padding: 0 auto;
+  margin: auto;
+  box-sizing: border-box;
 }
