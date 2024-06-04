@@ -5,6 +5,7 @@ import img1 from './images/img1.webp'
 function App() {
   return (
     <>
+    <h1>SIT</h1>
      <header>
   <nav>
     <ul type="none">
