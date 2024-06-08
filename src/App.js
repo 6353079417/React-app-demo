@@ -11,9 +11,13 @@ function App() {
       if (mode === 'light') {
         setMode('dark');
         document.body.style.background="black"
+        document.body.style.color="white"
+
       } else {
         setMode("light");
         document.body.style.background="white"
+        document.body.style.color="black"
+
       }
     }
   return (
