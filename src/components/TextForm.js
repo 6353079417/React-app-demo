@@ -51,8 +51,6 @@ export default function TextForm(props) {
             <button className='btn btn-outline-danger my-3 mx-4' onClick={handleClear}>Clear</button>
             <button className='btn btn-outline-danger my-3 mx-4' onClick={handleCopy}>Copy Text</button>
             <button className='btn btn-outline-danger my-3 mx-4' onClick={handleRemoveSpace}>Remove extra space</button>
-
-
             </div>
             <div className="container">
                 <h2>Your Text Summary</h2>
