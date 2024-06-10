@@ -7,6 +7,8 @@ import TextForm from './components/TextForm';
 function App() {
     const [mode,setMode] = useState('light')
 
+    const [btnText,newbtnText] = useState('Enable Dark Mode')
+
     const toggleMode = () => {
       if (mode === 'light') {
         setMode('dark');
@@ -22,8 +24,8 @@ function App() {
     }
   return (
     <>
-      <Navbar title="SIT" aboutText="Contact Us" mode={mode} toggleMode = {toggleMode} />
-      <TextForm heading="Enter Text to Analyse Below"/>
+      <Navbar title="SIT" aboutText="Contact Us" mode={mode} toggleMode = {toggleMode} btnText={btnText}/>
+      <TextForm toggleMode = {toggleMode} mode = {mode} heading="Enter Text to Analyse Below"/>
     </>
   );
 }
