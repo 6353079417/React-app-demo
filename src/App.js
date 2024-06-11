@@ -1,25 +1,34 @@
 
+import { useState } from 'react';
 import './App.css';
-import img1 from './images/img1.webp'
+import Navbar from './components/Navbar.js';
+import TextForm from './components/TextForm.js';
 
 function App() {
-  return (
-    <>
-    <h1>SIT</h1>
-     <header>
-  <nav>
-    <ul type="none">
-      <li>Home </li>
-      <li>Student info.. </li>
-      <li>Gallary</li>
-      <li>About Us.</li>
-      <li>Contact Us.</li>
-    </ul>
-    <h1>This is the picture of our school Student</h1>
-    <img src={img1} alt=""  className="img1"/>
 
-  </nav>
-</header>
+  const [mode,setMode] = useState("light");
+
+  const [btnText,setBtnText] = useState("Enable Dark Mode");
+
+  const toggleMode = () => {
+    if (mode === 'light') {
+        setMode('dark');
+        document.body.style.background= "black"
+        document.body.style.color= "white"
+        setBtnText("Enable light Mode");
+    } else {
+      setMode('light');
+      document.body.style.background= "white"
+      document.body.style.color= "black"
+      setBtnText("Enable Dark Mode");
+    }
+  }
+
+
+  return (
+    <> 
+    <Navbar  heading="SIT" AboutText="About Us" mode = {mode} btnText={btnText} toggleMode = {toggleMode}/>
+    <TextForm title="About Us" mode = {mode} toggleMode = {toggleMode}/>
     </>
   );
 }
