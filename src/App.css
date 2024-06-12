@@ -12,3 +12,26 @@ nav ul{
   height:700px;
   width:100%;
 }
+.circle-1{
+  height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.circle-2{
+  height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 10rem;
+    margin-top: -6rem;
+}
+#cir{
+  height: 25rem;
+    width: 83rem;
+    background-color: black;
+    margin-left: -240px;
+  
+}

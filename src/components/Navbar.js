@@ -20,11 +20,22 @@ export default function Navbar(props) {
                         <li className="nav-item">
                             <a className="nav-link disabled" aria-disabled="true">{props.AboutText}</a>
                         </li>
-                    </ul>
-                    <form className="d-flex" role="search">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode}  />{props.btnText}
+
+                        <div className="dropdown"> {props.toggleMode1}
+                        <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                         Theme
+                        </button>
+                        <ul className="dropdown-menu" id="cir">
+                           <div className="circle-1" onClick={props.toggleMode1}>Red</div>
+                           <div className="circle-2" onClick={props.toggleMode2}>Green</div>
+                        </ul>
                     </div>
+                    </ul>
+                   
+                    <form className="d-flex" role="search">
+                        <div className="form-check form-switch">
+                            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode} />{props.btnText}
+                        </div>
                     </form>
                 </div>
             </div>

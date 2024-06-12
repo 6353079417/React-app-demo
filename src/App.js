@@ -24,10 +24,34 @@ function App() {
     }
   }
 
+  const toggleMode1 = () => {
+    if (mode === 'light') {
+        setMode('red');
+        document.body.style.background= "red"
+        document.body.style.color= "white"
+    } else {
+      setMode('red');
+      document.body.style.background= "red"
+      document.body.style.color= "white"
+    }
+  }
+
+  const toggleMode2 = () => {
+    if (mode === 'light') {
+        setMode('green');
+        document.body.style.background= "green"
+        document.body.style.color= "white"
+    } else {
+      setMode('red');
+      document.body.style.background= "red"
+      document.body.style.color= "white"
+    }
+  }
+
 
   return (
     <> 
-    <Navbar  heading="SIT" AboutText="About Us" mode = {mode} btnText={btnText} toggleMode = {toggleMode}/>
+    <Navbar  heading="SIT" AboutText="About Us" mode = {mode} btnText={btnText} toggleMode = {toggleMode} toggleMode1 = {toggleMode1} toggleMode2={toggleMode2}/>
     <TextForm title="About Us" mode = {mode} toggleMode = {toggleMode}/>
     </>
   );
