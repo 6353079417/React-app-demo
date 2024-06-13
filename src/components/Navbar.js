@@ -9,7 +9,9 @@ export default function Navbar(props) {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <ul className={`navbar-nav me-auto mb-2 mb-lg-0 text-${props.mode === 'black' ? 'yellow' : 'red'}`}>
+
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -21,13 +23,15 @@ export default function Navbar(props) {
                             <a className="nav-link disabled" aria-disabled="true">{props.AboutText}</a>
                         </li>
 
-                        <div className="dropdown"> {props.toggleMode1}
+                        <div className="dropdown">
                         <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
                          Theme
                         </button>
                         <ul className="dropdown-menu" id="cir">
-                           <div className="circle-1" onClick={props.toggleMode1}>Red</div>
-                           <div className="circle-2" onClick={props.toggleMode2}>Green</div>
+                           <div className="circle-1" onClick={props.redToggle}><p className="font-1">Red</p></div>
+                           <div className="circle-2" onClick={props.greenToggle}><p className="font-2">Green</p></div>
+                           <div className="circle-3" onClick={props.blueToggle}><p className="font-3"><img src="" alt="" /></p></div>
+                           
                         </ul>
                     </div>
                     </ul>

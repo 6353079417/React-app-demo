@@ -31,7 +31,40 @@ nav ul{
 #cir{
   height: 25rem;
     width: 83rem;
-    background-color: black;
+    background-color:rgb(243, 243, 243);
+    opacity: 0.9 ; 
     margin-left: -240px;
   
+}
+.font-1{
+  color: white;
+    font-size: 24px;
+    margin-left: 28px;
+    position: absolute;
+    margin-top: 24px;
+    font-family: cursive;
+}
+.font-2{
+  color: white;
+  font-size: 24px;
+  margin-left: 20px;
+  position: absolute;
+  margin-top: 24px;
+  font-family: cursive;
+}
+.circle-3{
+  height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    margin-left: 18rem;
+    margin-top: -6rem;
+}
+.font-3{
+  color: white;
+  font-size: 24px;
+  margin-left: 28px;
+  position: absolute;
+  margin-top: 24px;
+  font-family: cursive;
 }
