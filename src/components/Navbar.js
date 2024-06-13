@@ -30,7 +30,12 @@ export default function Navbar(props) {
                         <ul className="dropdown-menu" id="cir">
                            <div className="circle-1" onClick={props.redToggle}><p className="font-1">Red</p></div>
                            <div className="circle-2" onClick={props.greenToggle}><p className="font-2">Green</p></div>
-                           <div className="circle-3" onClick={props.blueToggle}><p className="font-3"><img src="" alt="" /></p></div>
+                           <div className="circle-3" onClick={props.purpleToggle}><p className="font-3">Purple</p></div>
+                           <div className="circle-4" onClick={props.yellowToggle}><p className="font-4">O & Y</p></div>
+                           <div className="circle-5" onClick={props.blueToggle}><p className="font-5">Blue</p></div>
+                           <div className="circle-6" onClick={props.grayToggle}><p className="font-6">Gray</p></div>
+
+
                            
                         </ul>
                     </div>
