@@ -28,13 +28,20 @@ function App() {
         document.body.style.background="black"
         document.body.style.color="white"
         setBtnText("Enable light Mode")  
-        showAlert("Dark mode has been Enable","success")  ;    
+        showAlert("Dark mode has been Enable","success")  ;
+        setInterval(() => {
+          document.title="Chauhan - Dhaval"
+        },100);
+        setInterval(() => {
+          document.title="Chauhan - girishbhai"
+        },100);
       } else {
         setMode("light");
         document.body.style.background="white";
         document.body.style.color="black";
         setBtnText("Enable Dark Mode");
         showAlert("light Mode Has Been Enable","success");
+        document.title="SIT - satyam bhai"
       }
     }
     
