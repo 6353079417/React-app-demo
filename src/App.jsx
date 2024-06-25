@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <Navbar title="SIT" aboutText="Contact Us" mode={mode} toggleMode = {toggleMode} btnText={btnText}/>
       <Alert alert = {alert}/>
       <TextForm toggleMode = {toggleMode} mode = {mode} heading="Enter Text to Analyse Below" showAlert={showAlert}/>
+      <PrivacyPolicy/>
     </>
   );
 }
